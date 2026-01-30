@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name          EVO - Responsive Marcatempo Virtuale
 // @namespace     https://unibo.it/
-// @version       1.0
+// @version       1.1
 // @description   Rende responsive la pagina "Marcatempo Virtuale" su smartphone con font grandi e layout ottimizzato
 // @author        Stefano
 // @match         https://personale-unibo.hrgpi.it/*
@@ -74,21 +74,27 @@
                     font-weight: bold !important;
                 }
 
-                /* Radio buttons più grandi */
+                /* Radio buttons molto più grandi */
                 .form-check {
-                    margin-bottom: 1rem !important;
+                    margin-bottom: 1.5rem !important;
+                    padding: 0.5rem !important;
                 }
 
                 .form-check-input {
-                    width: 1.5rem !important;
-                    height: 1.5rem !important;
-                    margin-top: 0.3rem !important;
+                    width: 2.5rem !important;
+                    height: 2.5rem !important;
+                    margin-top: 0 !important;
+                    cursor: pointer !important;
+                    flex-shrink: 0 !important;
                 }
 
                 .form-check-label {
-                    font-size: 1.8rem !important;
-                    margin-left: 0.5rem !important;
+                    font-size: 2rem !important;
+                    margin-left: 0.8rem !important;
                     padding-left: 0.5rem !important;
+                    cursor: pointer !important;
+                    display: flex !important;
+                    align-items: center !important;
                 }
 
                 /* Select più grandi */
@@ -196,8 +202,13 @@
                     font-size: 1.7rem !important;
                 }
 
+                .form-check-input {
+                    width: 2.2rem !important;
+                    height: 2.2rem !important;
+                }
+
                 .form-check-label {
-                    font-size: 1.6rem !important;
+                    font-size: 1.8rem !important;
                 }
 
                 .form-select {
