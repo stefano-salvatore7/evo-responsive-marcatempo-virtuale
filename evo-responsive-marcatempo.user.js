@@ -1,13 +1,13 @@
 // ==UserScript==
-// @name          EVO - Responsive Marcatempo Virtuale
-// @namespace     https://unibo.it/
-// @version       1.1
-// @description   Rende responsive la pagina "Marcatempo Virtuale" su smartphone con font grandi e layout ottimizzato
-// @author        Stefano
-// @match         https://personale-unibo.hrgpi.it/*
-// @icon          https://www.unibo.it/favicon.ico
-// @grant         none
-// @run-at        document-end
+// @name         EVO - Responsive Marcatempo Virtuale
+// @namespace    https://unibo.it/
+// @version      1.2
+// @description  Rende responsive la pagina "Marcatempo Virtuale" su smartphone con font grandi e layout ottimizzato
+// @author       Stefano
+// @match        https://personale-unibo.hrgpi.it/*
+// @icon         https://www.unibo.it/favicon.ico
+// @grant        none
+// @run-at       document-end
 // ==/UserScript==
 
 (function () {
@@ -74,22 +74,28 @@
                     font-weight: bold !important;
                 }
 
-                /* Radio buttons molto più grandi */
+                /* Radio buttons (Entrata/Uscita) molto più grandi e affiancati */
                 .form-check {
                     margin-bottom: 1.5rem !important;
                     padding: 0.5rem !important;
+                    /* Modifica per non farli andare a capo */
+                    display: inline-flex !important; 
+                    align-items: center !important;
+                    margin-right: 1.5rem !important;
                 }
 
                 .form-check-input {
-                    width: 2.5rem !important;
-                    height: 2.5rem !important;
+                    /* Dimensione aumentata per selettori Entrata/Uscita */
+                    width: 3rem !important; 
+                    height: 3rem !important;
                     margin-top: 0 !important;
                     cursor: pointer !important;
                     flex-shrink: 0 !important;
                 }
 
                 .form-check-label {
-                    font-size: 2rem !important;
+                    /* Testo selettori più grande */
+                    font-size: 2.2rem !important; 
                     margin-left: 0.8rem !important;
                     padding-left: 0.5rem !important;
                     cursor: pointer !important;
@@ -141,10 +147,10 @@
                     margin-top: 2rem !important;
                 }
 
-                /* Fix per il layout dei radio buttons */
+                /* Fix per il layout dei radio buttons: manteniamo la riga per Entrata/Uscita */
                 .formTable td.d-flex {
-                    flex-direction: column !important;
-                    align-items: flex-start !important;
+                    flex-direction: row !important;
+                    align-items: center !important;
                     padding-left: 0 !important;
                 }
 
